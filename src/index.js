@@ -65,7 +65,7 @@ function authenticatedMiddleware(req, res, next) {
     let token = tokenFromCookie;
 
     if (typeof tokenWithBearer !== "undefined") {
-      token = tokenWithBearer.split("Bearer ")[1];
+      token = tokenWithBearer;
     }
 
     let decoded = null;
