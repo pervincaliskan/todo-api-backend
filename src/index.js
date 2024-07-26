@@ -21,7 +21,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use(
-  cors({ credentials: true, origin: true, exposedHeaders: ["Set-Cookie"], origin: ["https://todo-api-frontend.onrender.com/", "localhost"]})
+  cors({ credentials: true, origin: true, exposedHeaders: ["Set-Cookie"]})
 );
 app.use(cookieParser());
 
